@@ -1,5 +1,8 @@
 package tarea;
 
+/**
+ * @author  Cristhian C. && María Q Garrido
+ */
 public abstract class Casa {
     //elegimos protected para que las sublcases puedan acceder a estos atributos.
  protected String nombre;
