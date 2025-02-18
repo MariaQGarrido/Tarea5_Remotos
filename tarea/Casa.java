@@ -1,6 +1,6 @@
 package tarea;
 
-public class Casa {
+public abstract class Casa {
     //elegimos protected para que las sublcases puedan acceder a estos atributos.
  protected String nombre;
  protected double metrosC;
@@ -21,10 +21,6 @@ public class Casa {
         this.numVentanas = numVentanas;
     }
 
-    /**
-     *
-     * @return
-     */
     public String getNombre() {
         return nombre;
     }
@@ -56,5 +52,10 @@ public class Casa {
     public void setNumVentanas(int numVentanas) {
         this.numVentanas = numVentanas;
     }
+
+    /**
+     * @return Metodo abstracto que se implementara en las subclases, el cual calcula los metros cuadrados de la casa.
+     */
+    public abstract void calcularMetrosCuadrados();
 }
 
