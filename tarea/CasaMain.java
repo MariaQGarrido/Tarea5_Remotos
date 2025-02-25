@@ -12,7 +12,6 @@ public class CasaMain {
 
     public static void main(String args[]){
 
-        System.out.println("Hall: ");
         datosGenerales();
         System.out.println("¿Tiene puerta blindada? Si/No");
         String esBlindada = sc.nextLine();
@@ -25,7 +24,6 @@ public class CasaMain {
         Hall hall = new Hall(nombre, metrosCuadrados, puertas, ventanas, isBlindada);
 
 
-        System.out.println("Cocina: ");
         datosGenerales();
         System.out.println("¿Tiene tendedero? Si/No");
         String tieneTendedero = sc.nextLine();
@@ -42,7 +40,6 @@ public class CasaMain {
         Cocina cocina = new Cocina(nombre, metrosCuadrados, puertas, ventanas, isTendedero, metrosTendedero);
 
 
-        System.out.println("Salón: ");
         datosGenerales();
         System.out.println("Cuantas tomas de red tiene: ");
         int tomasRed = Integer.parseInt(sc.nextLine());
@@ -61,7 +58,6 @@ public class CasaMain {
         Salon salon = new Salon(nombre, metrosCuadrados, puertas, ventanas, tomasRed, isTerraza, metrosTS);
 
 
-        System.out.println("Habitación: ");
         datosGenerales();
         System.out.println("Dime numero de puertas del armario: ");
         int numPuertasArmario = Integer.parseInt(sc.nextLine());
@@ -75,8 +71,7 @@ public class CasaMain {
         }
         Habitacion habitacion = new Habitacion(nombre, metrosCuadrados, puertas, ventanas, numPuertasArmario, isAccesoDirecto);
 
-
-        System.out.println("Baño: ");
+        
         datosGenerales();
         System.out.println("Dime si tiene bañera o ducha: ");
         String baneraODucha = sc.nextLine();
