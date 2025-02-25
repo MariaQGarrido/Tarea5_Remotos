@@ -37,4 +37,9 @@ public class Habitacion extends Casa{
     public boolean isBanio() {
         return banio;
     }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+        System.out.println("Los metros cuadrados de la habitación son: " + metrosC);
+    }
 }

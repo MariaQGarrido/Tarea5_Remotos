@@ -26,4 +26,9 @@ public class Hall extends Casa{
     public boolean isBlindada() {
         return blindada;
     }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+        System.out.println("Los metros cuadrados del hall son: " + metrosC);
+    }
 }

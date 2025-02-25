@@ -37,4 +37,9 @@ public class Cocina extends Casa{
     public double getMetrosT() {
         return metrosT;
     }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+        System.out.println("Los metros cuadrados de la cocina son: " + (metrosC+metrosT));
+    }
 }

@@ -27,4 +27,9 @@ public class Banio extends Casa{
     public String getBanieraDucha() {
         return banieraDucha;
     }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+        System.out.println("Los metros cuadrados del baño son: " + metrosC);
+    }
 }
