@@ -15,9 +15,75 @@ public class CasaMain {
         System.out.println("Hall: ");
         datosGenerales();
         System.out.println("¿Tiene puerta blindada? Si/No");
-        String isBlindada = sc.nextLine();
-//
-//        if(isBlindada.equals)
+        String esBlindada = sc.nextLine();
+        boolean isBlindada = false;
+        if (esBlindada.equalsIgnoreCase("si")){
+            isBlindada=true;
+        } else{
+            isBlindada=false;
+        }
+        Hall hall = new Hall(nombre, metrosCuadrados, puertas, ventanas, isBlindada);
+
+
+        System.out.println("Cocina: ");
+        datosGenerales();
+        System.out.println("¿Tiene tendedero? Si/No");
+        String tieneTendedero = sc.nextLine();
+        boolean isTendedero = false;
+        double metrosTendedero = 0.0;
+        if (tieneTendedero.equalsIgnoreCase("si")){
+            isTendedero=true;
+
+            System.out.println("Dime los metros cuadrados del tendedero: ");
+            metrosTendedero = Double.parseDouble(sc.nextLine());
+        } else{
+            isTendedero=false;
+        }
+        Cocina cocina = new Cocina(nombre, metrosCuadrados, puertas, ventanas, isTendedero, metrosTendedero);
+
+
+        System.out.println("Salón: ");
+        datosGenerales();
+        System.out.println("Cuantas tomas de red tiene: ");
+        int tomasRed = Integer.parseInt(sc.nextLine());
+        System.out.println("¿Tiene terraza? Si/No");
+        String tieneTerraza = sc.nextLine();
+        boolean isTerraza = false;
+        double metrosTS = 0.0;
+        if (tieneTerraza.equalsIgnoreCase("si")){
+            isTerraza=true;
+
+            System.out.println("Dime los metros cuadrados de la terraza: ");
+            metrosTS = Double.parseDouble(sc.nextLine());
+        } else{
+            isTerraza=false;
+        }
+        Salon salon = new Salon(nombre, metrosCuadrados, puertas, ventanas, tomasRed, isTerraza, metrosTS);
+
+
+        System.out.println("Habitación: ");
+        datosGenerales();
+        System.out.println("Dime numero de puertas del armario: ");
+        int numPuertasArmario = Integer.parseInt(sc.nextLine());
+        System.out.println("Tiene acceso directo al baño?");
+        String accesoDirecto = sc.nextLine();
+        boolean isAccesoDirecto = false;
+        if (accesoDirecto.equalsIgnoreCase("si")){
+            isAccesoDirecto=true;
+        } else{
+            isAccesoDirecto=false;
+        }
+        Habitacion habitacion = new Habitacion(nombre, metrosCuadrados, puertas, ventanas, numPuertasArmario, isAccesoDirecto);
+
+
+        System.out.println("Baño: ");
+        datosGenerales();
+        System.out.println("Dime si tiene bañera o ducha: ");
+        String baneraODucha = sc.nextLine();
+        Banio banio = new Banio(nombre, metrosCuadrados, puertas, ventanas, baneraODucha);
+
+
+        System.out.println("\nMOSTRANDO DATOS:");
 
     }
 
