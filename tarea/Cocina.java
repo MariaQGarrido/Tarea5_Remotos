@@ -36,7 +36,6 @@ public class Cocina extends Casa{
      * @return metros
      */
     public double getMetrosT() {
-
         return metrosT;
     }
 

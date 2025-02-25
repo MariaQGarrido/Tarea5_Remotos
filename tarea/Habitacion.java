@@ -44,4 +44,9 @@ public class Habitacion extends Casa{
     public void calcularMetrosCuadrados() {
 
     }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+        System.out.println("Los metros cuadrados de la habitación son: " + metrosC);
+    }
 }

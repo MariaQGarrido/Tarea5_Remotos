@@ -30,6 +30,6 @@ public class Hall extends Casa{
 
     @Override
     public void calcularMetrosCuadrados() {
-
+        System.out.println("Los metros cuadrados del hall son: " + metrosC);
     }
 }

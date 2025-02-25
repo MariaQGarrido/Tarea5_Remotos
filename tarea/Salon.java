@@ -55,6 +55,6 @@ public class Salon extends Casa{
 
     @Override
     public void calcularMetrosCuadrados() {
-
+        System.out.println("Los metros cuadrados del salón son: " + (metrosC+metrosTS));
     }
 }
