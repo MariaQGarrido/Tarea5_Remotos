@@ -25,6 +25,12 @@ public class Banio extends Casa{
      * @return banieraDucha: representa si el baño tiene bañera o ducha
      */
     public String getBanieraDucha() {
+
         return banieraDucha;
+    }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+
     }
 }

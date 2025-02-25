@@ -27,6 +27,7 @@ public class Cocina extends Casa{
      * @return tendedero: valor booleano que indica si tiene tendedero o no
      */
     public boolean isTendedero() {
+
         return tendedero;
     }
 
@@ -35,6 +36,12 @@ public class Cocina extends Casa{
      * @return metros
      */
     public double getMetrosT() {
+
         return metrosT;
+    }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+
     }
 }

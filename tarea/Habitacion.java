@@ -5,7 +5,7 @@ package tarea;
  */
 public class Habitacion extends Casa{
     protected int numPuertasArmario;
-    protected boolean banio;
+    protected boolean accesobanio;
 
     /**
      *
@@ -14,12 +14,12 @@ public class Habitacion extends Casa{
      * @param numPuertas
      * @param numVentanas
      * @param numPuertasArmario
-     * @param banio
+     * @param accesobanio
      */
-    public Habitacion(String nombre, double metrosC, int numPuertas, int numVentanas, int numPuertasArmario, boolean banio) {
+    public Habitacion(String nombre, double metrosC, int numPuertas, int numVentanas, int numPuertasArmario, boolean accesobanio) {
         super(nombre, metrosC, numPuertas, numVentanas);
         this.numPuertasArmario = numPuertasArmario;
-        this.banio = banio;
+        this.accesobanio = accesobanio;
     }
 
     /**
@@ -27,6 +27,7 @@ public class Habitacion extends Casa{
      * @return numPuertasArmario: un valor entero que contiene el numero de puertas del armario empotrado
      */
     public int getNumPuertasArmario() {
+
         return numPuertasArmario;
     }
 
@@ -35,6 +36,12 @@ public class Habitacion extends Casa{
      * @return baño: valor booleano que indica si tiene acceso directo a un baño o no
      */
     public boolean isBanio() {
-        return banio;
+
+        return accesobanio;
+    }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+
     }
 }

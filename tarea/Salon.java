@@ -31,6 +31,7 @@ public class Salon extends Casa{
      * @return tomasRed: devuelve el número de red qye hay
      */
     public int getTomasRed() {
+
         return tomasRed;
     }
 
@@ -39,6 +40,7 @@ public class Salon extends Casa{
      * @return terraza: devuelve un buleano si hay terraza o no
      */
     public boolean isTerraza() {
+
         return terraza;
     }
 
@@ -47,6 +49,12 @@ public class Salon extends Casa{
      * @return metrosST: devuelve los metros que tiene la terraza del salón
      */
     public double getMetrosTS() {
+
         return metrosTS;
+    }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+
     }
 }

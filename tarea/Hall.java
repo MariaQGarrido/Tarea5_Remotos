@@ -24,6 +24,12 @@ public class Hall extends Casa{
      * @return blindada: retorna un booleano si es blindada o no.
      */
     public boolean isBlindada() {
+
         return blindada;
+    }
+
+    @Override
+    public void calcularMetrosCuadrados() {
+
     }
 }

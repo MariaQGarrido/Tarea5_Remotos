@@ -59,6 +59,6 @@ public abstract class Casa {
     /**
      * @return Metodo abstracto que se implementara en las subclases, el cual calcula los metros cuadrados de la casa.
      */
-    public abstract void calcularMetrosCuadrados();
+    public abstract  void calcularMetrosCuadrados();
 }
 
