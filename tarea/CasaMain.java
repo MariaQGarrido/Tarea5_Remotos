@@ -79,6 +79,42 @@ public class CasaMain {
 
 
         System.out.println("\nMOSTRANDO DATOS:");
+        System.out.println("Datos del "+hall.getNombre()+":");
+        hall.calcularMetrosCuadrados();
+        System.out.println("puertas: "+hall.getNumPuertas());
+        System.out.println("ventanas: "+hall.getNumVentanas());
+        System.out.println("Blindada: "+hall.isBlindada());
+
+        System.out.println("\nDatos de la "+cocina.getNombre()+":");
+        cocina.calcularMetrosCuadrados();
+        System.out.println("puertas: "+cocina.getNumPuertas());
+        System.out.println("ventanas: "+cocina.getNumVentanas());
+        System.out.println("Tiene tendedero: "+cocina.isTendedero());
+        System.out.println("Metros del tendedero: "+cocina.getMetrosT());
+
+        System.out.println("\nDatos del "+salon.getNombre()+":");
+        salon.calcularMetrosCuadrados();
+        System.out.println("puertas: "+salon.getNumPuertas());
+        System.out.println("ventanas: "+salon.getNumVentanas());
+        System.out.println("Tomas de red: "+salon.getTomasRed());
+        System.out.println("Tiene terraza: "+salon.isTerraza());
+        System.out.println("Metros de la terraza: "+salon.getMetrosTS());
+
+        System.out.println("\nDatos de la "+habitacion.getNombre()+":");
+        habitacion.calcularMetrosCuadrados();
+        System.out.println("puertas: "+habitacion.getNumPuertas());
+        System.out.println("ventanas: "+habitacion.getNumVentanas());
+        System.out.println("Numero de puertas del armario: "+habitacion.getNumPuertasArmario());
+        System.out.println("Acceso directo al baño: "+habitacion.isBanio());
+
+        System.out.println("\nDatos del "+banio.getNombre()+":");
+        banio.calcularMetrosCuadrados();
+        System.out.println("puertas: "+banio.getNumPuertas());
+        System.out.println("ventanas: "+banio.getNumVentanas());
+        System.out.println("Tiene "+banio.getBanieraDucha());
+
+
+
 
     }
 

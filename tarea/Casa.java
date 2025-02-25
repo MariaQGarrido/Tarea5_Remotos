@@ -5,10 +5,10 @@ package tarea;
  */
 public abstract class Casa {
     //elegimos protected para que las sublcases puedan acceder a estos atributos.
- protected String nombre;
- protected double metrosC;
- protected int numPuertas;
- protected int numVentanas;
+     protected String nombre;
+     protected double metrosC;
+     protected int numPuertas;
+     protected int numVentanas;
 
     /**
      *
